@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=IBM+Plex+Sans+Thai:wght@300&family=Noto+Sans+Thai:wght@300&display=swap');
 
-
 * {
   box-sizing: border-box;
   font-family: 'Noto Sans Thai', sans-serif;
@@ -11,13 +10,15 @@
   padding: 1vh 0;
 }
 .header_01{
-  background-image: url('./images/flower_01.png');
+  background-image: url('./images/flower_01.png'); 
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat ;
-  width: 100%;
-  height: 98vh;
+  width: 100% !important;
+  height: 98vh !important;
   padding-bottom: 1vh;
+
+  display: flex;
 }
 
 .sub_header_01{
@@ -28,14 +29,53 @@
   align-items: center;
   flex-direction: column;
 }
-.sub_header_01 h1, h2 {
+h1, h2, h3, span, p {
   color: aliceblue;
+}
+.sub_header_01 p{
+  position: absolute;
+  bottom: 1vh;
 }
 .profile_01{
   width: 300px;
   border-radius: 150px;
+  margin: 50px;
 }
 
 .scheduled {
   display: flex;
+  gap: 1em;
+  margin: 50px ;
+}
+.time, .event {
+  display: flex;
+  flex-direction: column;
+  gap: 67px;
+  margin-top: 29px;
+}
+
+.sub_header_02{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 70%;
+}
+.sub_header_02 h1 , .sub_header_02 h2 {
+  font-weight: lighter;
+  font-size: 4.2em;
+}
+.sub_header_02 h2{
+  font-size: 3em;
+}
+.fullname{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin: 4em 5em;
+}
+.location_01{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 7em;
 }
