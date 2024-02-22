@@ -3,79 +3,490 @@
 * {
   box-sizing: border-box;
   font-family: 'Noto Sans Thai', sans-serif;
+  font-weight: lighter;
+  letter-spacing: 2px;
   margin: 0;
 }
-.container{
+
+.container {
   width: 100%;
   padding: 1vh 0;
 }
-.header_01{
-  background-image: url('./images/flower_01.png'); 
+
+.header_01,
+.body_01,
+.footer_01 {
+  background-image: url('./images/flower_01.png');
   background-size: cover;
   background-position: center center;
-  background-repeat: no-repeat ;
-  width: 100% !important;
-  height: 98vh !important;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 98vh;
   padding-bottom: 1vh;
 
   display: flex;
 }
 
-.sub_header_01{
+.sub_header_01 {
   width: 30%;
   height: 98vh;
-  background-color: #ffffff60;
+  background-color: #ffffff30;
   display: flex;
   align-items: center;
   flex-direction: column;
 }
-h1, h2, h3, span, p {
+
+h1,
+h2,
+h3,
+span,
+p {
   color: aliceblue;
 }
-.sub_header_01 p{
+
+.sub_header_01 p {
   position: absolute;
   bottom: 1vh;
 }
-.profile_01{
-  width: 300px;
+
+.profile_01 {
+  width: 15em;
   border-radius: 150px;
-  margin: 50px;
+  margin: 30px;
 }
 
 .scheduled {
   display: flex;
   gap: 1em;
-  margin: 50px ;
+  margin: 50px;
 }
-.time, .event {
+
+.time,
+.event {
   display: flex;
   flex-direction: column;
   gap: 67px;
   margin-top: 29px;
 }
 
-.sub_header_02{
+.sub_header_02 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   width: 70%;
 }
-.sub_header_02 h1 , .sub_header_02 h2 {
+
+.sub_header_02 h1,
+.sub_header_02 h2 {
   font-weight: lighter;
   font-size: 4.2em;
 }
-.sub_header_02 h2{
+
+.sub_header_02 h2 {
   font-size: 3em;
 }
-.fullname{
+
+.fullname {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   margin: 4em 5em;
 }
-.location_01{
+
+.location_01 {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 7em;
+}
+
+/* --------------------------------------------------------------- BODY ---------------------------------------------------------- */
+.body_01 {
+  background-image: url('./images/wat_01.png') !important;
+  height: 100% !important;
+  margin-top: 1vh !important;
+}
+
+.supported {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 50%;
+  padding: 2em 3em;
+}
+
+.support h1 {
+  font-size: 10em;
+  font-weight: bold;
+  color: #ffffff50;
+  z-index: 99;
+}
+
+.support h2 {
+  font-size: 1.7em;
+}
+
+.support p {
+  font-size: 1.2em;
+}
+
+.qrcode {
+  width: 50%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  margin: 2em;
+}
+
+.qrcode img {
+  width: 12em;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------- */
+
+.footer_01 {
+  background-image: url('./images/profile_02.jpg') !important;
+  background-size: cover;
+  margin-top: 1vh !important;
+  flex-direction: column;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------- */
+
+.discourse {
+  height: 20%;
+  font-size: 1.5em;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+.discourse p {
+  color: #000000a4 !important;
+}
+
+.discourse hr {
+  border: none;
+  border-top: 2px solid #ffffff;
+  margin: 1em;
+  width: 60%;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------- */
+.map_Nphomp {
+  height: 75%;
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+
+.map_wat,
+.phompay {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.map_wat iframe {
+  width: 60%;
+  height: 75%;
+  border-radius: 20px;
+}
+
+.phompay {
+  flex-direction: column;
+  gap: 4em;
+}
+
+.phompay img {
+  width: 30%;
+  background-color: #ffffff50;
+  border-radius: 10px;
+}
+
+.phompay p {
+  font-weight: bold;
+  font-size: 2em;
+  color: #ffffffb0;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------- */
+.flexbox-a {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background: #e3edf7;
+  border-radius: 10px;
+  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15);
+  border: 1px solid rgba(0, 0, 0, 0);
+  cursor: pointer;
+  transition: transform 0.5s;
+}
+
+.btn:hover {
+  box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
+    inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7),
+    -0.5px -0.5px 0px rgba(255, 255, 255, 1),
+    0.5px 0.5px 0px rgba(0, 0, 0, 0.15),
+    0px 12px 10px -10px rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  transform: translateY(0.5em);
+}
+
+.btn img {
+  transition: transform 0.5s;
+}
+
+.btn:hover img {
+  transform: scale(0.9);
+}
+
+.footer_01 p1 {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  color: #ffffff;
+  font-size: 0.5em;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------- */
+
+
+
+/* ---------------------------------------------------- RESSOLUTION ------------------------------------------------ */
+/* ------------------------ max-width 1000 */
+@media (max-width: 1080px) {
+
+  /* , .body_01, .footer_01 */
+  .header_01 {
+    display: flex;
+    flex-direction: column-reverse;
+    height: 98vh;
+  }
+
+  .sub_header_01 {
+    width: 100%;
+    height: 50%;
+  }
+
+  .sub_header_01 p {
+    position: absolute;
+    bottom: 2vh;
+  }
+
+  .profile_01 {
+    width: 15em;
+    border-radius: 150px;
+    margin: 30px;
+    visibility: hidden;
+  }
+
+  .scheduled {
+    display: flex;
+    gap: 1em;
+    margin: 50px;
+  }
+
+  /* .time, .event {
+    display: flex;
+    flex-direction: column;
+    gap: 67px;
+    margin-top: 29px;
+  } */
+
+  .sub_header_02 {
+    height: 50%;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .sub_header_02 h1 {
+    font-weight: lighter;
+    font-size: 2.2em;
+  }
+
+  .sub_header_02 h2 {
+    font-size: 1.5em;
+  }
+
+  /* -------------------------------------------------------- BODY ---------------------------------- */
+  .supported {
+    height: 100%;
+    padding: 2em 3em;
+  }
+
+  .support h1 {
+    font-size: 8em;
+  }
+
+  .qrcode {
+    width: 50%;
+    margin: 1em;
+  }
+
+  .qrcode img {
+    width: 10em;
+  }
+
+  /* ----------------------------------------------- FOOTER ------------------------------------------ */
+  .footer_01 {
+    height: 100%;
+  }
+
+  .map_Nphomp {
+    height: 30em;
+  }
+
+  .map_wat,
+  .phompay,
+  .phompay img {
+    width: 50%;
+  }
+
+  .map_wat iframe {
+    width: 80%;
+  }
+
+  .phompay p {
+    font-size: 1.5em;
+  }
+}
+/* --------------------------------------------- Mobile (max-width: 500px) ----------------------------------------------------- */
+@media (max-width: 500px){
+  * {
+    letter-spacing: 1.2px;
+  }
+  .header_01 {
+    background-image: url('./images/flower_01_1.png') !important;
+    display: flex;
+    flex-direction: column-reverse;
+    height: 100vh;
+  }
+  .sub_header_01{
+    display: flex;
+    background-color: #ffffff30;
+    border-radius: 10px;
+    margin-left: 3%;
+    width: 94%;
+    height:70%;
+  }
+  .sub_header_01 p {
+    position: static;
+    bottom: 0;
+  }
+  .sub_header_01 h1 , .sub_header_01 h2 {
+    font-size: 100%;
+  }
+
+  .profile_01 {
+    width: 0;
+    margin:5%;
+    visibility: hidden;
+  }
+  .scheduled {
+    margin: 3%;
+  }
+  .half img {
+    width: 0.5em;
+  }
+  .time, .event {
+    display: flex;
+    flex-direction: column;
+    gap: 17%;
+    margin-top: 10%;
+  }
+  .fullname {
+    margin: 8% 0.5em;
+  }
+  .sub_header_02 {
+    justify-content: space-between;
+    height: 40%;
+    width: 100%;
+  }
+
+  .sub_header_02 h1 {
+    font-size: 99%;
+  }
+
+  .sub_header_02 h2 {
+    font-size: 70%;
+  }
+  .location_01{
+    margin: 0 0 5% 0;
+  }
+  .location_01 img {
+    width: 60%;
+    }
+  /* -------------------------------------------------------- BODY ---------------------------------- */
+  .body_01 {
+    background-position: center left;
+  }
+  .supported {
+    height: 100%;
+    padding: 1em 1em;
+    width: 70%;
+  }
+
+  .support h1 {
+    font-size: 300%;
+  }
+  .support h2{
+    font-size: 90%;
+  }
+  .support p{
+    font-size: 63%;
+  }
+  .qrcode {
+    width: 30%;
+    margin: 5% 5% 0 0;
+  }
+
+  .qrcode img {
+    width: 70%;
+  } 
+  /* ----------------------------------------------- FOOTER ------------------------------------------ */
+  .footer_01 {
+    height: 100%;
+  }
+
+  .map_Nphomp {
+    height: 35em;
+    flex-direction: column;
+  }
+  .discourse p{
+    font-size: 70%;
+    margin-bottom: 2em;
+  }
+
+  .map_wat,
+  .phompay {
+    width: 100%;
+    height: 300px;
+    gap: 10%;
+  }
+  .phompay img {
+    width: 40%;
+    height: auto;
+  }
+  .map_wat iframe {
+    border-radius: 5px;
+    width: 85%;
+    height: 100%;
+  }
+
+  .phompay p {
+    font-size: 80%;
+    font-weight: lighter;
+  }
 }
