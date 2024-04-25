@@ -6,13 +6,15 @@ import qrwat from "./images/qrcode.svg";
 import fb_logo from "./images/facebook.svg"
 import ig_logo from "./images/instagram.svg"
 import ln_logo from "./images/linkedin.svg"
+import ลายกนก from "./images/ลายกนก.png"
+import buyme from "./images/bmc_qr.png" ;
 import "./App.css";
 
-let time = ["xx:xx", "xx:xx", "xx:xx", "xx:xx"].map((time) => (<span>{time}<br /></span>));
-let events = ["-- none --", "-- none --", "-- none --", "-- none --"].map((events) => (<span>{events}<br /></span>));
-let sup_mom = ["ญาติฝั่งมารดา","นางสาว วรนาถ   พันธุเดช (มารดา)","นาง ประไพ   พันธุเดช (ยาย)",].map((sup_mom) => (<h2>{sup_mom}<br /></h2>));
-let sup_dad = ["ญาติฝั่งบิดา","นาย กฤษณะ   จันทสิทธิ์ (บิดา)","นาง สำเนาว์   จันทสิทธิ์ (ย่า)","นาย สิน   จันทสิทธิ์ (ปู่) ",].map((sup_dad) => (<h2>{sup_dad}<br /></h2>));
-let sup_other = ["และ เพื่อนๆ พี่น้อง ญาติๆ","ท่านผู้เจริญทั้งหลาย ทั้งที่รู้จัก และ ไม่รู้จักทั้งหลาย",].map((sup_other) => (<p>{sup_other}<br /></p>));
+const time = ["xx:xx", "xx:xx", "xx:xx", "xx:xx"].map((time) => (<span>{time}<br /></span>));
+const events = ["-- none --", "-- none --", "-- none --", "-- none --"].map((events) => (<span>{events}<br /></span>));
+const sup_mom = ["ฝั่งมารดา","นางสาว วรนาถ   พันธุเดช (มารดา)","นาง ประไพ   พันธุเดช (ยาย)",].map((sup_mom) => (<h2>{sup_mom}<br /></h2>));
+const sup_dad = ["ฝั่งบิดา","นาย กฤษณะ   จันทสิทธิ์ (บิดา)","นาง สำเนาว์   จันทสิทธิ์ (ย่า)","นาย สิน   จันทสิทธิ์ (ปู่) ",].map((sup_dad) => (<h2>{sup_dad}<br /></h2>));
+const sup_other = ["และ เพื่อนๆ พี่น้อง ญาติๆ","ท่านผู้เจริญทั้งหลาย ทั้งที่รู้จัก และ ไม่รู้จักทั้งหลาย",].map((sup_other) => (<p>{sup_other}<br /></p>));
 
 function App() {
   return (
@@ -20,8 +22,8 @@ function App() {
       <div className="header_01">
         <div className="sub_header_01">
           <img className="profile_01" src={profile} alt="thename" />
-          <h1>วัน dddd ที่ dd เดือน MMMM ปี yyyy</h1>
-          <h2>ขึ้น/ แรม XX ค่ำ เดือน MM</h2>
+          <h1>วันอาทิตย์ที่ 30 เดือน มิถุนายน 2567</h1>
+          <h2>(แรม 1 ค่ำ เดือน 8)</h2>
           <div className="scheduled">
             <div className="time">{time}</div>
             <div className="half">
@@ -51,7 +53,6 @@ function App() {
             {sup_dad} <br /> <br />
             {sup_other} <br />
           </div>
-          {/* */}
         </div>
         <div className="qrcode">
           <img src={qrwat} alt="qrwat" />
@@ -80,8 +81,8 @@ function App() {
             ></iframe>
           </div>
           <div className="phompay">
-            <img src={phompay} alt="phompay" />
-            <p>BUY ME A BEER !! 🍺 <br/> OR COFFEE !! ☕ </p>
+            <img src={buyme} alt="phompay" href="https://buymeacoffee.com/thammarat2i"  />
+            <p>BUY ME A BEER !! 🍺 <br/> OR A COFFEE !! ☕ </p>
           </div>
         </div>
         <div className="flexbox-a">
