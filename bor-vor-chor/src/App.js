@@ -6,12 +6,11 @@ import qrwat from "./images/qrcode.svg";
 import fb_logo from "./images/facebook.svg"
 import ig_logo from "./images/instagram.svg"
 import ln_logo from "./images/linkedin.svg"
-import ลายกนก from "./images/ลายกนก.png"
 import buyme from "./images/bmc_qr.png" ;
 import "./App.css";
 
 const time = ["xx:xx", "xx:xx", "xx:xx", "xx:xx"].map((time) => (<span>{time}<br /></span>));
-const events = ["-- none --", "-- none --", "-- none --", "-- none --"].map((events) => (<span>{events}<br /></span>));
+const events = ["-- No1 --", "-- none --", "-- none --", "-- none --"].map((events) => (<span>{events}<br /></span>));
 const sup_mom = ["ฝั่งมารดา","นางสาว วรนาถ   พันธุเดช (มารดา)","นาง ประไพ   พันธุเดช (ยาย)",].map((sup_mom) => (<h2>{sup_mom}<br /></h2>));
 const sup_dad = ["ฝั่งบิดา","นาย กฤษณะ   จันทสิทธิ์ (บิดา)","นาง สำเนาว์   จันทสิทธิ์ (ย่า)","นาย สิน   จันทสิทธิ์ (ปู่) ",].map((sup_dad) => (<h2>{sup_dad}<br /></h2>));
 const sup_other = ["และ เพื่อนๆ พี่น้อง ญาติๆ","ท่านผู้เจริญทั้งหลาย ทั้งที่รู้จัก และ ไม่รู้จักทั้งหลาย",].map((sup_other) => (<p>{sup_other}<br /></p>));
@@ -81,7 +80,9 @@ function App() {
             ></iframe>
           </div>
           <div className="phompay">
-            <img src={buyme} alt="phompay" href="https://buymeacoffee.com/thammarat2i"  />
+            <a href="https://buymeacoffee.com/thammarat2i" >
+              <img src={buyme} alt="bmc"   />
+            </a>
             <p>BUY ME A BEER !! 🍺 <br/> OR A COFFEE !! ☕ </p>
           </div>
         </div>
