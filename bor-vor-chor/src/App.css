@@ -16,7 +16,7 @@
 .header_01,
 .body_01,
 .footer_01 {
-  background-image: url('./images/flower_01.png');
+  background-image: url('./images/webp/flower_01.webp');
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -101,12 +101,11 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 3em;
 }
 
 /* --------------------------------------------------------------- BODY ---------------------------------------------------------- */
 .body_01 {
-  background-image: url('./images/wat_01.png') !important;
+  background-image: url('./images/webp/wat_01.webp') !important;
   height: 100% !important;
   margin-top: 1vh !important;
 }
@@ -149,7 +148,7 @@ p {
 /* ---------------------------------------------------------------------------------------------------------------- */
 
 .footer_01 {
-  background-image: url('./images/profile_02.jpg') !important;
+  background-image: url('./images/webp/profile_02.webp') !important;
   background-size: cover;
   margin-top: 1vh !important;
   flex-direction: column;
@@ -185,9 +184,8 @@ p {
   align-items: center;
 }
 
-.map_wat,
-.phompay {
-  width: 50%;
+.map_wat {
+  width: 100%;
   height: 100%;
   display: flex;
   justify-content: center;
@@ -199,24 +197,60 @@ p {
   height: 75%;
   border-radius: 5px;
   box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.2);
+  border: rgba(0, 0, 0, 0);
+}
+.map_wat iframe:focus {
+  border: rgba(0, 0, 0, 0);
 }
 
 .phompay {
+  position: fixed;
+  right: 15px;
+  top : 70%;
+  width: 8em;
+}
+.btn_01 {
+  display: flex;
+  padding: 0;
+  width: 100%;
+  gap: 1em;
+  color: #ffffff;
+  align-items: center;
+  cursor: pointer;
+}
+/* .phompay {
   flex-direction: column;
   gap: 4em;
-}
+} */
 
 .phompay img {
-  width: 30%;
-  background-color: #ffffff50;
+  background-color: #ffffff;
+  padding: 5px;
+  width: 100%;
   border-radius: 10px;
+  transition: 0.5s ;
+}
+.phompay img:hover {
+  scale: 1.1;
+}
+.phompay button {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  border: transparent;
+}
+.phompay button:hover {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  border: transparent;
 }
 
-.phompay p {
+/* .phompay p {
   font-weight: bold;
   font-size: 2em;
   color: #ffffffb0;
-}
+} */
 
 /* ---------------------------------------------------------------------------------------------------------------- */
 .flexbox-a {
@@ -353,9 +387,7 @@ p {
     height: 30em;
   }
 
-  .map_wat,
-  .phompay,
-  .phompay img {
+  .map_wat {
     width: 50%;
   }
 
@@ -373,7 +405,7 @@ p {
     letter-spacing: 1.2px;
   }
   .header_01 {
-    background-image: url('./images/flower_01_1.png') !important;
+    background-image: url('./images/webp/flower_01_1.webp') !important;
     display: flex;
     flex-direction: column-reverse;
     height: 100vh;
@@ -384,14 +416,14 @@ p {
     box-shadow: 10px 10px 0 0 rgba(223, 223, 223, 0.5) ;
     margin: 20px auto ;
     width: 90%;
-    height:60%;
+    height:55%;
   }
   .sub_header_01 p {
     position: static;
     bottom: 0;
   }
   .sub_header_01 h1 , .sub_header_01 h2 {
-    font-size: 120%;
+    font-size: 110%;
   }
 
   .profile_01 {
@@ -433,9 +465,7 @@ p {
   .location_01 h2{
     font-size: 90%;
   }
-  .location_01 {
-    margin: 0 0 5% 0;
-  }
+  
   .fullname h1 {
     text-align: end;
     font-size: 150%;
@@ -483,26 +513,32 @@ p {
   }
   .discourse p{
     font-size: 70%;
-    margin-bottom: 2em;
   }
 
-  .map_wat,
-  .phompay {
+  .map_wat{
     width: 100%;
     gap: 10%;
   }
-  .phompay img {
+  .phompay {
+    width: 6.5em;
+    right: 5px;    
+    top: 60%;
+  }
+  /* .phompay img {
     width: 40%;
     height: auto;
-  }
+  } */
   .map_wat iframe {
     width: 90%;
-    height: 100%;
+    height: 80%;
     border:none;
   }
 
   .phompay p {
-    font-size: 0%;
+    font-size: 80%;
     font-weight: lighter;
+  }
+  .phompay img:hover {
+    scale: 1;
   }
 }

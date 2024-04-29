@@ -1,12 +1,12 @@
 import profile from "./images/profile_01.jpg";
-import phompay from "./images/phompay01.png";
+import closes from "./images/close.svg";
 import half from "./images/half.svg";
-import footer from "./images/footer.svg";
 import qrwat from "./images/qrcode.svg";
 import fb_logo from "./images/facebook.svg"
 import ig_logo from "./images/instagram.svg"
 import ln_logo from "./images/linkedin.svg"
 import buyme from "./images/bmc_qr.png" ;
+import line_knok from "./images/ลายกนก.png";
 import "./App.css";
 
 const time = ["xx:xx", "xx:xx", "xx:xx", "xx:xx"].map((time) => (<span>{time}<br /></span>));
@@ -14,7 +14,9 @@ const events = ["-- No1 --", "-- none --", "-- none --", "-- none --"].map((even
 const sup_mom = ["ฝั่งมารดา","นางสาว วรนาถ   พันธุเดช (มารดา)","นาง ประไพ   พันธุเดช (ยาย)",].map((sup_mom) => (<h2>{sup_mom}<br /></h2>));
 const sup_dad = ["ฝั่งบิดา","นาย กฤษณะ   จันทสิทธิ์ (บิดา)","นาง สำเนาว์   จันทสิทธิ์ (ย่า)","นาย สิน   จันทสิทธิ์ (ปู่) ",].map((sup_dad) => (<h2>{sup_dad}<br /></h2>));
 const sup_other = ["และ เพื่อนๆ พี่น้อง ญาติๆ","ท่านผู้เจริญทั้งหลาย ทั้งที่รู้จัก และ ไม่รู้จักทั้งหลาย",].map((sup_other) => (<p>{sup_other}<br /></p>));
-
+const btn_buyme = () => {
+  document.getElementById("phompay").style.visibility = 'hidden';
+}
 function App() {
   return (
     <div className="container">
@@ -40,7 +42,7 @@ function App() {
           <div className="location_01">
             <h1>ณ วัดท่าศาลา</h1>
             <h2>ต.รำพัน อ.ท่าใหม่ จ.จันทบุรี</h2>
-            <img style={{ marginTop: "1em" }} src={footer} alt="footer" />
+            <img style={{ marginTop: "0em", width:"30%" }} src={line_knok} alt="footer" />
           </div>
         </div>
       </div>
@@ -63,7 +65,7 @@ function App() {
           <p>
             ...กรรมใดที่กระผมเคยล่วงเกินท่านๆไป <br />
             ไม่ว่าจะด้วย กายกรรมก็ดี วจีกรรมก็ดี มโนกรรมก็ดี <br />
-            อย่าจองเวรกูเลย ปล่อยกูไปเถอะ <br />
+            อย่าจองเวรกูเลย ปล่อยกูไปเถอะสู <br />
             กราบ 1 กราบ 2 กราบ 3... <br />
             🙇‍♂️
           </p>
@@ -77,14 +79,10 @@ function App() {
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
               title="wat"
+              target="blank"
             ></iframe>
           </div>
-          <div className="phompay">
-            <a href="https://buymeacoffee.com/thammarat2i" >
-              <img src={buyme} alt="bmc"   />
-            </a>
-            <p>BUY ME A BEER !! 🍺 <br/> OR A COFFEE !! ☕ </p>
-          </div>
+          
         </div>
         <div className="flexbox-a">
           <a
@@ -120,7 +118,17 @@ function App() {
         </div>
         <p1>POWERED LIFE BY MONEY || CREATED BY GETASOHARD</p1>
       </div>
+      <div className="phompay" id="phompay">
+        <button className="btn_01" onClick={btn_buyme} > 
+        <img src={closes} alt="x" style={{ margin:"2px 0", width:"15%" }} /> Close </button>
+        <a href="https://buymeacoffee.com/thammarat2i" target="blank">
+          <img src={buyme} alt="bmc" />
+        </a>
+        
+        <p>BUY ME A BEER !! 🍺 <br/> OR A COFFEE !! ☕ </p>
+      </div>
     </div>
+    
   );
 }
 
