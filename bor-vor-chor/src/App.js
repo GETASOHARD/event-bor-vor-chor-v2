@@ -1,5 +1,5 @@
 import profile from "./images/profile_01.jpg";
-import closes from "./images/close.svg";
+import closes from "./images/close.png";
 import half from "./images/half.svg";
 import qrwat from "./images/qrcode.svg";
 import fb_logo from "./images/facebook.svg"
@@ -7,6 +7,8 @@ import ig_logo from "./images/instagram.svg"
 import ln_logo from "./images/linkedin.svg"
 import buyme from "./images/bmc_qr.png" ;
 import line_knok from "./images/ลายกนก.png";
+import phompay from "./images/phompay.png";
+
 import "./App.css";
 
 const time = ["xx:xx", "xx:xx", "xx:xx", "xx:xx"].map((time) => (<span>{time}<br /></span>));
@@ -17,6 +19,10 @@ const sup_other = ["และ เพื่อนๆ พี่น้อง ญา
 const btn_buyme = () => {
   document.getElementById("phompay").style.visibility = 'hidden';
 }
+
+
+
+
 function App() {
   return (
     <div className="container">
@@ -42,7 +48,7 @@ function App() {
           <div className="location_01">
             <h1>ณ วัดท่าศาลา</h1>
             <h2>ต.รำพัน อ.ท่าใหม่ จ.จันทบุรี</h2>
-            <img style={{ marginTop: "0em", width:"30%" }} src={line_knok} alt="footer" />
+            <img style={{ width:"30%" }} src={line_knok} alt="footer" />
           </div>
         </div>
       </div>
@@ -120,11 +126,11 @@ function App() {
       </div>
       <div className="phompay" id="phompay">
         <button className="btn_01" onClick={btn_buyme} > 
-        <img src={closes} alt="x" style={{ margin:"2px 0", width:"15%" }} /> Close </button>
+        <img src={closes} alt="x" style={{ padding:"0",background:"#ffffff00", margin:"2px 0", width:"13%" }} /> Close </button>
+        <img src={phompay} alt="phompay" id="phompay_1" />
         <a href="https://buymeacoffee.com/thammarat2i" target="blank">
           <img src={buyme} alt="bmc" />
         </a>
-        
         <p>BUY ME A BEER !! 🍺 <br/> OR A COFFEE !! ☕ </p>
       </div>
     </div>
