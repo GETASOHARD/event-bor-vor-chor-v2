@@ -43,7 +43,7 @@ function App() {
         <div className="sub_header_02">
           <div className="fullname">
             <h1>ขอเชิญนายทุนทุกๆท่านเข้าร่วมงานอุปสมบทเราเอง</h1>
-            <h2>นาย ธรรมรัต จันทสิทธิ์ (โนเนม)</h2>
+            <h2 className="namess">นาย ธรรมรัต จันทสิทธิ์ (โนเนม)</h2>
           </div>
           <div className="location_01">
             <h1>ณ วัดท่าศาลา</h1>

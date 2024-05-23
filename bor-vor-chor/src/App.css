@@ -193,7 +193,7 @@ p {
   gap: 5%;
 }
 .map_wat p {
-  font-size:180% ;
+  font-size:150% ;
   color:#ffffffab;
 }
 .map_wat iframe {
@@ -414,6 +414,16 @@ p {
     flex-direction: column-reverse;
     height: 100vh;
   }
+
+/******* safari *******************************************************************************/
+  @media not all and (min-resolution: 0.001dpcm) {
+    @supports (-webkit-appearance: none) {
+      .header_01 {
+        height: 100%;
+      }
+    }
+  }
+/******************************************************************************************/
   .sub_header_01{
     display: flex;
     background-color: rgb(74,74,74,.5);
@@ -425,7 +435,7 @@ p {
   }
   .sub_header_01 p {
     font-size: 70%;
-    bottom: 10;
+    bottom: 10px;
   }
   .sub_header_01 h1 , .sub_header_01 h2 {
     font-size: 110%;
@@ -451,7 +461,7 @@ p {
     margin-top: 10%;
   }
   .fullname {
-    margin: 3% 5%;
+    margin: 0% 5%;
   }
   .sub_header_02 {
     justify-content: space-between;
@@ -462,10 +472,14 @@ p {
   .sub_header_02 h1 {
     font-size: 99%;
   }
-
   .sub_header_02 h2 {
     font-size: 70%;
   }
+  .namess {
+    margin-top: -15px;
+    margin-bottom: 25px ;
+  }
+
   .location_01 h1 {
     font-size: 130%;
   }
@@ -512,7 +526,7 @@ p {
     height: 100%;
   }
   .map_Nphomp {
-    height: 35em;
+    height: 30em;
     flex-direction: column;
   }
   .discourse p{
@@ -520,23 +534,21 @@ p {
   }
   .map_wat{
     width: 100%;
-    gap: 10%;
+    gap: 2%;
   }
   .phompay {
     width: 6.5em;
     right: 5px;    
     top: 40%;
   }
-  /* .phompay img {
-    width: 40%;
-    height: auto;
-  } */
   .map_wat iframe {
-    width: 90%;
-    height: 80%;
+    width: 100%;
     border:none;
   }
-
+  .map_wat p {
+    font-size:70% ;
+    color:#ffffffab;
+  }
   .phompay p {
     font-size: 80%;
     font-weight: lighter;
