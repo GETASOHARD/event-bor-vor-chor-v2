@@ -1,21 +1,19 @@
 import profile from "./images/profile_01.jpg";
 import closes from "./images/close.png";
-import half from "./images/half.svg";
 import qrwat from "./images/qrcode.svg";
-import fb_logo from "./images/facebook.svg"
-import ig_logo from "./images/instagram.svg"
-import ln_logo from "./images/linkedin.svg"
 import buyme from "./images/bmc_qr.png" ;
 import line_knok from "./images/ลายกนก.png";
 import phompay from "./images/phompay.png";
-
+import facebook from "./images/facebook.svg";
+import instar from "./images/instagram.svg";
+import linkin from "./images/linkedin.svg";
 import "./App.css";
 
-const time = ["xx:xx", "xx:xx", "xx:xx", "xx:xx"].map((time) => (<span>{time}<br /></span>));
-const events = ["-- No1 --", "-- none --", "-- none --", "-- none --"].map((events) => (<span>{events}<br /></span>));
-const sup_mom = ["ฝั่งมารดา","นางสาว วรนาถ   พันธุเดช (มารดา)","นาง ประไพ   พันธุเดช (ยาย)",].map((sup_mom) => (<h2>{sup_mom}<br /></h2>));
-const sup_dad = ["ฝั่งบิดา","นาย กฤษณะ   จันทสิทธิ์ (บิดา)","นาง สำเนาว์   จันทสิทธิ์ (ย่า)","นาย สิน   จันทสิทธิ์ (ปู่) ",].map((sup_dad) => (<h2>{sup_dad}<br /></h2>));
+const image_schd = [require('./images/hands.png'), require('./images/rice.png'),require('./images/monk.png'),require('./images/bowl.png')]
+const sup_mom = ["ฝั่งมารดา","นาง ประไพ   พันธุเดช (ยาย)" ,"นางสาว วรนาถ   พันธุเดช (มารดา)"].map((sup_mom) => (<h2>{sup_mom}<br /></h2>));
+const sup_dad = ["ฝั่งบิดา","นาง สำเนาว์   จันทสิทธิ์ (ย่า)","นาย สิน   จันทสิทธิ์ (ปู่) ","นาย กฤษณะ   จันทสิทธิ์ (บิดา)"].map((sup_dad) => (<h2>{sup_dad}<br /></h2>));
 const sup_other = ["และ เพื่อนๆ พี่น้อง ญาติๆ","ท่านผู้เจริญทั้งหลาย ทั้งที่รู้จัก และ ไม่รู้จักทั้งหลาย",].map((sup_other) => (<p>{sup_other}<br /></p>));
+
 const btn_buyme = () => {
   document.getElementById("phompay").style.visibility = 'hidden';
 }
@@ -26,27 +24,30 @@ function App() {
       <div className="header_01">
         <div className="sub_header_01">
           <img className="profile_01" src={profile} alt="thename" />
-          <section>
-            <h1>วันเสาร์ที่ 29 มิถุนายน 2567</h1>
-          {/* <h2>(แรม 1 ค่ำ เดือน 8)</h2> */}
-            <h2>14:00 ปลงผมนาค, ทำขวัญนาค</h2>
-          </section>
-          <section>
-            <h1>วันอาทิตย์ที่ 30 มิถุนายน 2567</h1>
-          {/* <h2>(แรม 1 ค่ำ เดือน 8)</h2> */}
-            <h2>07:00 ถวายภัตตาหารเช้า แด่พระภิกษุสงฆ์</h2>
-            <h2>08:30 นำนาคเข้าพิธีอุปสมบท</h2>
-            <h2>11:00 ถวายภัตตาหารเพลแด่พระภิกษุสงฆ์</h2>
-          </section>
-
-          {/* <div className="scheduled">
-            <div className="time">{time}</div>
-            <div className="half">
-              <img src={half} alt="dot" />
+          <section >
+            <h1>วันเสาร์ที่ ๒๙ มิถุนายน ๒๕๖๗</h1>
+            <h2>(แรม ๘ ค่ำ เดือน ๗)</h2>
+            <div className="schedule_">
+              <img className="icon_schd" src={image_schd[0]} alt="ปลงผมนาค" />
+              <h1>๑๔.๐๐<br/> ปลงผมนาค, ทำขวัญนาค</h1>
             </div>
-            <div className="event ">{events}</div>
-          </div> */}
-          <p>บวชแล้ว บวชอยู่ บวชต่อ</p>
+          </section>
+          <section>
+            <h1>วันอาทิตย์ที่ ๒๐ มิถุนายน ๒๕๖๗</h1>
+            <h2>(แรม ๙ ค่ำ เดือน ๗)</h2>
+            <div className="schedule_">
+              <img className="icon_schd" src={image_schd[1]} alt="ทำบุญเช้า" />
+              <h1>๐๗.๐๐ <br/> ถวายภัตตาหารเช้าแด่พระภิกษุสงฆ์</h1>
+            </div>
+            <div className="schedule_">
+              <img className="icon_schd" src={image_schd[2]} alt="บวชสาย" />
+              <h1>๐๘.๐๐ <br/> นำนาคเข้าพิธีอุปสมบท</h1>
+            </div>
+            <div className="schedule_">
+              <img className="icon_schd" src={image_schd[3]} alt="ถวายเพล" />
+              <h1>๑๑.๐๐ <br/> ถวายภัตตาหารเพลแด่พระภิกษุสงฆ์</h1>
+            </div>
+          </section>
         </div>
         <div className="sub_header_02">
           <div className="fullname">
@@ -70,7 +71,7 @@ function App() {
           </div>
         </div>
         <div className="qrcode">
-          <img src={qrwat} alt="qrwat" />
+            <img src={qrwat} alt="qrwat"  />
         </div>
       </div>
       <div className="footer_01">
@@ -80,7 +81,7 @@ function App() {
             ...กรรมใดที่กระผมเคยล่วงเกินท่านๆไป <br />
             ไม่ว่าจะด้วย กายกรรมก็ดี วจีกรรมก็ดี มโนกรรมก็ดี <br />
             อย่าจองเวรกูเลย ปล่อยกูไปเถอะสู <br />
-            กราบ 1 กราบ 2 กราบ 3... <br />
+            กราบ ๑ กราบ ๒ กราบ ๓... <br />
             🙇‍♂️
           </p>
         </div>
@@ -107,7 +108,7 @@ function App() {
             rel="noreferrer"
           >
             <button className="btn">
-              <img src={fb_logo} alt="Facebook" />
+              <img src={facebook} alt="Facebook" />
             </button>
           </a>
           <a
@@ -117,7 +118,7 @@ function App() {
             rel="noreferrer"
           >
             <button className="btn">
-              <img src={ig_logo} alt="ig" />
+              <img src={instar} alt="ig" />
             </button>
           </a>
           <a
@@ -127,7 +128,7 @@ function App() {
             rel="noreferrer"
           >
             <button className="btn">
-              <img src={ln_logo} alt="in"/>
+              <img src={linkin} alt="in"/>
             </button>
           </a>
         </div>

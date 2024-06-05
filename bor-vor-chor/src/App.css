@@ -51,27 +51,31 @@ p {
   text-align: center;
   font-size: 2em;
 }
-
+.sub_header_01 h2 {
+  text-align: center;
+  font-size: 1em;
+}
 .profile_01 {
   width: 15em;
   border-radius: 150px;
   margin: 30px;
 }
-
-.scheduled {
-  display: flex;
-  gap: 1em;
-  margin: 50px;
+.sub_header_01 section{
+  width: 90%;
 }
-
-.time,
-.event {
+.schedule_{
+  align-items: center;
+  gap: 20px;
   display: flex;
-  flex-direction: column;
-  gap: 67px;
-  margin-top: 29px;
+  margin: 35px;
 }
-
+.schedule_ h1 {
+  text-align : start;
+  font-size: 20px;
+}
+.icon_schd {
+  width: 60px ;
+}
 .sub_header_02 {
   display: flex;
   flex-direction: column;
@@ -437,10 +441,12 @@ p {
     font-size: 70%;
     bottom: 10px;
   }
-  .sub_header_01 h1 , .sub_header_01 h2 {
-    font-size: 110%;
+  .sub_header_01 h1 {
+    font-size: 130%;
   }
-
+  .sub_header_01 h2 {
+    font-size: 80%;
+  }
   .profile_01 {
     position: absolute;
     width: 100px;
@@ -555,5 +561,13 @@ p {
   }
   .phompay img:hover {
     scale: 1;
+  }
+
+  .schedule_ h1 {
+    text-align : start;
+    font-size: 15px;
+  }
+  .icon_schd {
+    width: 40px ;
   }
 }
