@@ -27,7 +27,7 @@
 }
 
 .sub_header_01 {
-  width: 30%;
+  width: 600px;
   height: 98vh;
   background-color: #ffffff30;
   display: flex;
@@ -67,11 +67,11 @@ p {
   align-items: center;
   gap: 20px;
   display: flex;
-  margin: 35px;
+  margin: 5%;
 }
 .schedule_ h1 {
   text-align : start;
-  font-size: 20px;
+  font-size: 120%;
 }
 .icon_schd {
   width: 60px ;
@@ -323,7 +323,7 @@ p {
     margin: auto;
     padding: 10px;
     width: 90%;
-    height: 60%;
+    height: 65%;
   }
 
   .sub_header_01 p {
@@ -337,12 +337,6 @@ p {
     position: absolute;
     top: 8%;
     left: 4%;
-  }
-
-  .scheduled {
-    display: flex;
-    gap: 1em;
-    margin: 30px;
   }
 
   .sub_header_02 {
@@ -361,6 +355,13 @@ p {
 
   .sub_header_02 h2 {
     font-size: 1.5em;
+  }
+
+  .sub_header_01 section{
+    width: 90%;
+  }
+  .schedule_{
+    margin: 2%;
   }
 
   /* -------------------------------------------------------- BODY ---------------------------------- */
@@ -409,7 +410,7 @@ p {
   }
 }
 /* --------------------------------------------- Mobile (max-width: 500px) ----------------------------------------------------- */
-@media (max-width: 500px){
+@media (max-width: 600px){
   * {
     letter-spacing: 1.2px;
   }
@@ -471,15 +472,15 @@ p {
   }
   .sub_header_02 {
     justify-content: space-between;
-    height: 40%;
+    height: 35%;
     width: 100%;
   }
 
   .sub_header_02 h1 {
-    font-size: 99%;
+    font-size: 120%;
   }
   .sub_header_02 h2 {
-    font-size: 70%;
+    font-size: 100%;
   }
   .namess {
     margin-top: -15px;
@@ -562,12 +563,14 @@ p {
   .phompay img:hover {
     scale: 1;
   }
-
+  .schedule_{
+    margin: 8%;
+  }
   .schedule_ h1 {
     text-align : start;
     font-size: 15px;
   }
   .icon_schd {
-    width: 40px ;
+    width: 50px ;
   }
 }
