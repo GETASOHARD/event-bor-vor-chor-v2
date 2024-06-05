@@ -5,12 +5,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Available Scripts
 
 In the project directory, you can run:
-### Netlify Status
-[![Netlify Status](https://api.netlify.com/api/v1/badges/8e5851a8-d88b-4f9b-869d-2cfd906c4ddd/deploy-status)](https://app.netlify.com/sites/borvorchor/deploys)
 
 ### `npm start`
-
-
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
@@ -32,6 +28,10 @@ The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+### Netlify Status
+[![Netlify Status](https://api.netlify.com/api/v1/badges/8e5851a8-d88b-4f9b-869d-2cfd906c4ddd/deploy-status)](https://app.netlify.com/sites/borvorchor/deploys)
+
 
 ### `npm run eject`
 
