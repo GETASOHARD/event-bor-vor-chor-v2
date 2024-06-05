@@ -33,7 +33,7 @@ function App() {
             </div>
           </section>
           <section>
-            <h1>วันอาทิตย์ที่ ๒๐ มิถุนายน ๒๕๖๗</h1>
+            <h1>วันอาทิตย์ที่ ๓๐ มิถุนายน ๒๕๖๗</h1>
             <h2>(แรม ๙ ค่ำ เดือน ๗)</h2>
             <div className="schedule_">
               <img className="icon_schd" src={image_schd[1]} alt="ทำบุญเช้า" />
