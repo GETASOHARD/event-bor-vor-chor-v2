@@ -1,4 +1,4 @@
-import profile from "./images/profile_01.jpg";
+import profile from "./images/me_01.jpg";
 import closes from "./images/close.png";
 import qrwat from "./images/qrcode.svg";
 import buyme from "./images/bmc_qr.png" ;
@@ -11,7 +11,7 @@ import "./App.css";
 
 const image_schd = [require('./images/hands.png'), require('./images/rice.png'),require('./images/monk.png'),require('./images/bowl.png')]
 const sup_mom = ["ฝั่งมารดา","นาง ประไพ   พันธุเดช (ยาย)" ,"นางสาว วรนาถ   พันธุเดช (มารดา)"].map((sup_mom) => (<h2>{sup_mom}<br /></h2>));
-const sup_dad = ["ฝั่งบิดา","นาง สำเนาว์   จันทสิทธิ์ (ย่า)","นาย สิน   จันทสิทธิ์ (ปู่) ","นาย กฤษณะ   จันทสิทธิ์ (บิดา)"].map((sup_dad) => (<h2>{sup_dad}<br /></h2>));
+const sup_dad = ["ฝั่งบิดา","นาง สำเนาว์   จันทสิทธิ์ (ย่า)","นาย สิน   จันทสิทธิ์ (ปู่) ","นาง จิระนันท์   จันทสิทธิ์ (ป้า)", "นาย กฤษณะ   จันทสิทธิ์ (บิดา)"].map((sup_dad) => (<h2>{sup_dad}<br /></h2>));
 const sup_other = ["และ เพื่อนๆ พี่น้อง ญาติๆ","ท่านผู้เจริญทั้งหลาย ทั้งที่รู้จัก และ ไม่รู้จักทั้งหลาย",].map((sup_other) => (<p>{sup_other}<br /></p>));
 
 const btn_buyme = () => {
@@ -21,7 +21,7 @@ const btn_buyme = () => {
 function App() {
   return (
     <div className="container">
-      <div className="header_01">
+      <section className="header_01">
         <div className="sub_header_01">
           <img className="profile_01" src={profile} alt="thename" />
           <section >
@@ -60,8 +60,8 @@ function App() {
             <img style={{ width:"30%" }} src={line_knok} alt="footer" />
           </div>
         </div>
-      </div>
-      <div className="body_01">
+      </section>
+      <section className="body_01">
         <div className="supported">
           <div className="support">
             <h1>SUPPORTED BY</h1> <br />
@@ -73,8 +73,8 @@ function App() {
         <div className="qrcode">
             <img src={qrwat} alt="qrwat"  />
         </div>
-      </div>
-      <div className="footer_01">
+      </section>
+      <section className="footer_01">
         <div className="discourse">
           <hr />
           <p>
@@ -133,8 +133,8 @@ function App() {
           </a>
         </div>
         <p1>POWERED LIFE BY MONEY || CREATED BY GETASOHARD</p1>
-      </div>
-      <div className="phompay" id="phompay">
+      </section>
+      <section className="phompay" id="phompay">
         <button className="btn_01" onClick={btn_buyme} > 
         <img src={closes} alt="x" style={{ padding:"0",background:"#ffffff00", margin:"2px 0", width:"13%" }} /> Close </button>
         <img src={phompay} alt="phompay" id="phompay_1" />
@@ -142,7 +142,7 @@ function App() {
           <img src={buyme} alt="bmc" />
         </a>
         <p>BUY ME A BEER !! 🍺 <br/> OR A COFFEE !! ☕ </p>
-      </div>
+      </section>
     </div>
   );
 }
