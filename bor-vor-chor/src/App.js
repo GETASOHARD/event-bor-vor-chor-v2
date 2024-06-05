@@ -20,24 +20,32 @@ const btn_buyme = () => {
   document.getElementById("phompay").style.visibility = 'hidden';
 }
 
-
-
-
 function App() {
   return (
     <div className="container">
       <div className="header_01">
         <div className="sub_header_01">
           <img className="profile_01" src={profile} alt="thename" />
-          <h1>วันอาทิตย์ที่ 30 มิถุนายน 2567</h1>
-          <h2>(แรม 1 ค่ำ เดือน 8)</h2>
-          <div className="scheduled">
+          <section>
+            <h1>วันเสาร์ที่ 29 มิถุนายน 2567</h1>
+          {/* <h2>(แรม 1 ค่ำ เดือน 8)</h2> */}
+            <h2>14:00 ปลงผมนาค, ทำขวัญนาค</h2>
+          </section>
+          <section>
+            <h1>วันอาทิตย์ที่ 30 มิถุนายน 2567</h1>
+          {/* <h2>(แรม 1 ค่ำ เดือน 8)</h2> */}
+            <h2>07:00 ถวายภัตตาหารเช้า แด่พระภิกษุสงฆ์</h2>
+            <h2>08:30 นำนาคเข้าพิธีอุปสมบท</h2>
+            <h2>11:00 ถวายภัตตาหารเพลแด่พระภิกษุสงฆ์</h2>
+          </section>
+
+          {/* <div className="scheduled">
             <div className="time">{time}</div>
             <div className="half">
               <img src={half} alt="dot" />
             </div>
             <div className="event ">{events}</div>
-          </div>
+          </div> */}
           <p>บวชแล้ว บวชอยู่ บวชต่อ</p>
         </div>
         <div className="sub_header_02">
