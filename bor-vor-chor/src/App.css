@@ -574,3 +574,16 @@ p {
     width: 50px ;
   }
 }
+
+@media (max-width: 400px){
+  .schedule_{
+    margin: 5%;
+  }
+  .schedule_ h1 {
+    text-align : start;
+    font-size: 12px;
+  }
+  .icon_schd {
+    width: 40px ;
+  }
+}
