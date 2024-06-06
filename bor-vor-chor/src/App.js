@@ -141,7 +141,7 @@ function App() {
         <a href="https://buymeacoffee.com/thammarat2i" target="blank">
           <img src={buyme} alt="bmc" />
         </a>
-        <p>BUY ME A BEER !! 🍺 <br/> OR A COFFEE !! ☕ </p>
+        <p>BUY ME A COFFEE !! ☕</p>
       </section>
     </div>
   );

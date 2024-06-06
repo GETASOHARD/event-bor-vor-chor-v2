@@ -43,10 +43,6 @@ p {
   color: aliceblue;
 }
 
-.sub_header_01 p {
-  position: absolute;
-  bottom: 1vh;
-}
 .sub_header_01 h1 {
   text-align: center;
   font-size: 2em;
@@ -57,7 +53,7 @@ p {
 }
 .profile_01 {
   width: 15em;
-  border-radius: 150px;
+  border-radius: 50%;
   margin: 30px;
 }
 .sub_header_01 section{
@@ -87,11 +83,11 @@ p {
 .sub_header_02 h2 {
   font-weight: lighter;
   text-align: end;
-  font-size: 3.7em;
+  font-size: 3.5em;
 }
 
 .sub_header_02 h2 {
-  font-size: 3em;
+  font-size: 2.8em;
 }
 
 .fullname {
@@ -212,10 +208,14 @@ p {
 }
 
 .phompay {
+  text-align: center;
   position: fixed;
   right: 15px;
-  top : 50%;
+  top : 55%;
   width: 8em;
+}
+.phompay p{
+  font-size: 80%;
 }
 .btn_01 {
   display: flex;
@@ -226,12 +226,8 @@ p {
   cursor: pointer;
 }
 .btn_01 img {
-  padding: 0;
+  padding: none;
 }
-/* .phompay {
-  flex-direction: column;
-  gap: 4em;
-} */
 
 .phompay img {
   background-color: #ffffff;
@@ -244,23 +240,9 @@ p {
   scale: 1.1;
 }
 .phompay button {
-  width: 100%;
-  height: 100%;
   background-color: transparent;
   border: transparent;
 }
-.phompay button:hover {
-  width: 100%;
-  height: 100%;
-  background-color: transparent;
-  border: transparent;
-}
-
-/* .phompay p {
-  font-weight: bold;
-  font-size: 2em;
-  color: #ffffffb0;
-} */
 
 /* ---------------------------------------------------------------------------------------------------------------- */
 .flexbox-a {
@@ -394,19 +376,6 @@ p {
   }
   .map_wat iframe {
     width: 100%;
-  }
-
-  .phompay p {
-    font-size: 1.5em;
-  }
-  .phompay {
-    position: fixed;
-    right: 15px;
-    top : 45%;
-    width: 8em;
-  }
-  .phompay p {
-    font-size: 100%;
   }
 }
 /* --------------------------------------------- Mobile (max-width: 500px) ----------------------------------------------------- */
@@ -544,9 +513,7 @@ p {
     gap: 2%;
   }
   .phompay {
-    width: 6.5em;
-    right: 5px;    
-    top: 40%;
+    width: 20%;
   }
   .map_wat iframe {
     width: 100%;
@@ -556,13 +523,7 @@ p {
     font-size:70% ;
     color:#ffffffab;
   }
-  .phompay p {
-    font-size: 80%;
-    font-weight: lighter;
-  }
-  .phompay img:hover {
-    scale: 1;
-  }
+  
   .schedule_{
     margin: 8%;
   }
@@ -577,7 +538,7 @@ p {
 
 @media (max-width: 400px){
   .schedule_{
-    margin: 5%;
+    margin: 6%;
   }
   .schedule_ h1 {
     text-align : start;
@@ -585,5 +546,9 @@ p {
   }
   .icon_schd {
     width: 40px ;
+  }
+  
+  .phompay p {
+    font-size: 60%;
   }
 }
