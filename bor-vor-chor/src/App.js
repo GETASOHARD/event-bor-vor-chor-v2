@@ -23,7 +23,7 @@ function App() {
       <section className="header_01">
         <div className="sub_header_01">
           <img className="profile_01" src={profile} alt="thename" />
-          <section >
+          <section>
             <h1>วันเสาร์ที่ ๒๙ มิถุนายน ๒๕๖๗</h1>
             <h2>(แรม ๘ ค่ำ เดือน ๗)</h2>
             <div className="schedule_">
@@ -83,7 +83,7 @@ function App() {
         </div>
         <div className="map_Nphomp">
           <div className="map_wat">
-          <p> ขออภัย หากมิได้มากราบเชิญด้วยฉันตัวเอง นะจ๊ะ นะจ๊ะ </p>
+          <p> ขออภัย หากมิได้เรียนเชิญด้วยฉันตัวเอง นะจ๊ะ นะจ๊ะ </p>
             <iframe
               className="wat"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3893.0211891569634!2d101.91074907575228!3d12.646614521918721!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31037be48f6d3491%3A0x74b86398c45e451a!2sWat%20Tha%20Sala!5e0!3m2!1sen!2sth!4v1708570100775!5m2!1sen!2sth"
@@ -137,7 +137,7 @@ function App() {
         <a href="https://buymeacoffee.com/thammarat2i" target="blank">
           <img src={buyme} alt="bmc" />
         </a>
-        <p>BUY ME A COFFEE !! ☕ ตามกำลังที่มีเลยได้เลยฮับบ</p>
+        <p>BUY ME A COFFEE !! ☕ ตามกำลังที่มีได้เลยฮับบ</p>
       </section>
     </div>
   );
