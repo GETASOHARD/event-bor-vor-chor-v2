@@ -133,18 +133,6 @@ p {
   font-size: 1.2em;
 }
 
-.qrcode {
-  width: 50%;
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-end;
-  margin: 2em;
-}
-
-.qrcode img {
-  width: 20%;
-}
-
 /* ---------------------------------------------------------------------------------------------------------------- */
 
 .footer_01 {
@@ -356,15 +344,6 @@ p {
     font-size: 8em;
   }
 
-  .qrcode {
-    width: 50%;
-    margin: 1em;
-  }
-
-  .qrcode img {
-    width: 23%;
-  }
-
   /* ----------------------------------------------- FOOTER ------------------------------------------ */
   .footer_01 {
     height: 100vh;
@@ -419,9 +398,9 @@ p {
   }
   .profile_01 {
     position: absolute;
-    width: 100px;
+    width: 28%;
     top:14%;
-    left: 7%;
+    left:3%;
     margin: 0px;
   }
   .scheduled {
@@ -490,13 +469,7 @@ p {
   .support p{
     font-size: 63%;
   }
-  .qrcode {
-    width: 30%;
-    margin: 2% 2% 0 0;
-  }
-  .qrcode img {
-    width: 70%;
-  }
+
   /* ----------------------------------------------- FOOTER ------------------------------------------ */
   .footer_01 {
     height: 100%;

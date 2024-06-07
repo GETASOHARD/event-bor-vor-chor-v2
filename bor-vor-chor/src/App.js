@@ -1,6 +1,5 @@
 import profile from "./images/me_01.jpg";
 import closes from "./images/close.png";
-import qrwat from "./images/qrcode.svg";
 import buyme from "./images/bmc_qr.png" ;
 import line_knok from "./images/ลายกนก.png";
 import phompay from "./images/phompay.png";
@@ -70,9 +69,6 @@ function App() {
             {sup_other} <br />
           </div>
         </div>
-        <div className="qrcode">
-            <img src={qrwat} alt="qrwat"  />
-        </div>
       </section>
       <section className="footer_01">
         <div className="discourse">
@@ -141,7 +137,7 @@ function App() {
         <a href="https://buymeacoffee.com/thammarat2i" target="blank">
           <img src={buyme} alt="bmc" />
         </a>
-        <p>BUY ME A COFFEE !! ☕</p>
+        <p>BUY ME A COFFEE !! ☕ ตามกำลังที่มีเลยได้เลยฮับบ</p>
       </section>
     </div>
   );
