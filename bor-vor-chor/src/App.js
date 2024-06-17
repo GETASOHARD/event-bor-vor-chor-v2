@@ -44,7 +44,7 @@ function App() {
             </div>
             <div className="schedule_">
               <img className="icon_schd" src={image_schd[3]} alt="ถวายเพล" />
-              <h1>๑๑.๐๐ น. <br/> ถวายภัตตาหารเพลแด่พระภิกษุสงฆ์</h1>
+              <h1>๑๑.๐๐ น. <br/> ถวายภัตตาหารเพลแด่พระภิกษุสงฆ์และฉลองพระใหม่</h1>
             </div>
           </section>
         </div>
