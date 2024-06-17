@@ -28,7 +28,7 @@ function App() {
             <h2>(แรม ๘ ค่ำ เดือน ๗)</h2>
             <div className="schedule_">
               <img className="icon_schd" src={image_schd[0]} alt="ปลงผมนาค" />
-              <h1>๑๔.๐๐<br/> ปลงผมนาค, ทำขวัญนาค</h1>
+              <h1>~ ๑๖.๐๐<br/> ปลงผมนาค, ทำขวัญนาค</h1>
             </div>
           </section>
           <section>
