@@ -28,7 +28,7 @@ function App() {
             <h2>(แรม ๘ ค่ำ เดือน ๗)</h2>
             <div className="schedule_">
               <img className="icon_schd" src={image_schd[0]} alt="ปลงผมนาค" />
-              <h1>~ ๑๖.๐๐<br/> ปลงผมนาค, ทำขวัญนาค</h1>
+              <h1>~ ๑๖.๐๐ น. <br/> ปลงผมนาค, ทำขวัญนาค</h1>
             </div>
           </section>
           <section>
@@ -36,15 +36,15 @@ function App() {
             <h2>(แรม ๙ ค่ำ เดือน ๗)</h2>
             <div className="schedule_">
               <img className="icon_schd" src={image_schd[1]} alt="ทำบุญเช้า" />
-              <h1>๐๗.๐๐ <br/> ถวายภัตตาหารเช้าแด่พระภิกษุสงฆ์</h1>
+              <h1>๐๗.๐๐ น. <br/> ถวายภัตตาหารเช้าแด่พระภิกษุสงฆ์</h1>
             </div>
             <div className="schedule_">
               <img className="icon_schd" src={image_schd[2]} alt="บวชสาย" />
-              <h1>๐๘.๐๐ <br/> นำนาคเข้าพิธีอุปสมบท</h1>
+              <h1>๐๘.๐๐ น. <br/> นำนาคเข้าพิธีอุปสมบท</h1>
             </div>
             <div className="schedule_">
               <img className="icon_schd" src={image_schd[3]} alt="ถวายเพล" />
-              <h1>๑๑.๐๐ <br/> ถวายภัตตาหารเพลแด่พระภิกษุสงฆ์</h1>
+              <h1>๑๑.๐๐ น. <br/> ถวายภัตตาหารเพลแด่พระภิกษุสงฆ์</h1>
             </div>
           </section>
         </div>
